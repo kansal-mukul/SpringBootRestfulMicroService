@@ -21,7 +21,7 @@ public class EmployeeRestController {
     @RequestMapping("/")
     @ResponseBody
     public String welcome() {
-        return "Welcome to RestTemplate Example.";
+        	 return "<html><body style=\"background-color:	limegreen;\"><br><br><br><center><h1><font size = \"18\" color = \"black\">Congratulations</font><h1>  <h2><font color = \"white\">Your Employee Microservice Baseline Version (v1) is running now on your HCL OpenShift Enviornment. </font></h2> You can only view the employees list through /employees endpoint.</center></body></html>";
     }
  
     // URL:
@@ -37,7 +37,7 @@ public class EmployeeRestController {
         List<Employee> list = employeeDAO.getAllEmployees();
         return list;
     }
- 
+  /*
     // URL:
     // http://localhost:8080/SomeContextPath/employee/{empNo}
     // http://localhost:8080/SomeContextPath/employee/{empNo}.xml
@@ -56,7 +56,7 @@ public class EmployeeRestController {
     // http://localhost:8080/SomeContextPath/employee.xml
     // http://localhost:8080/SomeContextPath/employee.json
  
-    @RequestMapping(value = "/employee", //
+   @RequestMapping(value = "/employee", //
             method = RequestMethod.POST, //
             produces = { MediaType.APPLICATION_JSON_VALUE, //
                     MediaType.APPLICATION_XML_VALUE })
@@ -95,4 +95,4 @@ public class EmployeeRestController {
         System.out.println("(Service Side) Deleting employee: " + empNo);
  
         employeeDAO.deleteEmployee(empNo);
-    }}
+    }*/}
