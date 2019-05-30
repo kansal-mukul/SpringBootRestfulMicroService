@@ -21,7 +21,7 @@ public class EmployeeRestController {
     @RequestMapping("/")
     @ResponseBody
     public String welcome() {
-        return "Welcome to RestTemplate Example.";
+        	  return "<html><body style=\"background-color:mediumpurple;\"><br><br><br><center><h1><font size = \"18\" color = \"black\">Congratulations</font><h1>  <h2><font color = \"white\">Your Employee Microservice Canary Version (v2) is running now on your HCL OpenShift Enviornment. </font></h2>You can perform all the CRUD operations on the employee in this canary version.</center></body></html>";
     }
  
     // URL:
